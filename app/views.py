@@ -21,7 +21,9 @@ def getphonenumber():
                 'ERROR': 'Please Enter Place Name'
                 }
     except:
-        pass
+        result = {
+            'ERROR': 'Something went wrong!'
+            }
     
     return jsonify(result)
 
